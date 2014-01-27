@@ -133,7 +133,7 @@ fi
 %{_mandir}/man8/*.8*
 %doc doc/* etc/
 %doc package/CHANGES package/COPYING package/README package/THANKS package/TODO
-%dir /etc/service
+%dir /service
 
 %changelog
 * Fri Jan 20 2012 Joe Miller <joeym@joeym.net> 2.1.1-6
