@@ -74,8 +74,8 @@ if [ $1 = 1 ] ; then
   then
     cat >/etc/init/runsvdir.conf <<\EOT
 # for runit - manage /usr/sbin/runsvdir-start
-start on runlevel [2345]
-stop on runlevel [^2345]
+start on runlevel [345]
+stop on runlevel [^345]
 normal exit 0 111
 respawn
 exec /sbin/runsvdir-start
