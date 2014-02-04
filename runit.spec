@@ -61,7 +61,7 @@ done
 for i in man/*8 ; do
     %{__install} -D -m 0755 $i %{buildroot}%{_mandir}/man8/${i##man/}
 done
-%{__install} -d -m 0755 %{buildroot}/etc/service
+%{__install} -d -m 0755 %{buildroot}/service
 %{__install} -D -m 0750 etc/2 %{buildroot}%{_sbindir}/runsvdir-start
 
 %clean
